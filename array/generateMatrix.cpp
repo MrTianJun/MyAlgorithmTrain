@@ -9,11 +9,13 @@ using std::endl;
 vector<vector<int>> generateMatrix(int n)
 {
     vector<vector<int>> ret(n, vector<int>(n, 0));
-    int num = 1;
-    int loop = n - 2;
+
     int startx = 0;
     int startz = 0;
     int offset = 1;
+
+    int num = 1;
+    int loop = n - 2;
     int mid = n / 2;
     int i, j;
 

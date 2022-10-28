@@ -37,10 +37,10 @@ int removeElement(vector<int> nums, int target)
 {
     int siz = nums.size();
     int slowidx = 0;
-    for (int i = 0; i < siz; i++) 
+    for (int fastidx = 0; fastidx < siz; fastidx++) 
     {
-        if (nums[i] != target) {
-            nums[slowidx++] = nums[i];
+        if (nums[fastidx] != target) {
+            nums[slowidx++] = nums[fastidx];
         }
     }
 
